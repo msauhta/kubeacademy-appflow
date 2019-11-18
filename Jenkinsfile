@@ -66,7 +66,7 @@ pipeline {
                        newTag: "${env.BUILD_NUMBER}"
                    """
 
-                        sh("cat overlays/production/kustomization.yaml")
+                        sh("cat overlays/staging/kustomization.yaml")
                         sh("echo '####'")
                         sh("kubectl apply -k overlays/staging")
                     }
