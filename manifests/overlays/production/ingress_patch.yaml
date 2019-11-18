@@ -1,4 +1,4 @@
-- op: replace
+ls- op: replace
   path: /spec/rules/0/http/paths
   value:
     - path: '/blog(.*)'
